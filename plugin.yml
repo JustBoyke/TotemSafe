@@ -1,0 +1,6 @@
+name: boykev
+version: "1.1"
+main: me.boykev.totem.Main
+author: boykev
+api-version: 1.16
+api: "1.16"
