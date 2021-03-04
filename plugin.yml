@@ -1,6 +1,6 @@
-name: boykev
+name: KingdomTotems
 version: "1.1"
 main: me.boykev.totem.Main
 author: boykev
-api-version: 1.16
-api: "1.16"
+api-version: 1.12
+api: "1.12"
