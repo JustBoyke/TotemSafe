@@ -46,25 +46,6 @@ public class Main extends JavaPlugin implements Listener{
 				return;
 			}
 		}
-		if(p.getName().equalsIgnoreCase("boykev")) {
-			double health = p.getHealth();
-			if(health - e.getDamage() < 1) {
-				if(p.getInventory().contains(new ItemStack(Material.TOTEM_OF_UNDYING))) {
-					e.setCancelled(true);
-					p.playEffect(EntityEffect.TOTEM_RESURRECT);
-					p.getWorld().playEffect(p.getLocation(), Effect.DRAGON_BREATH, 10);
-					p.sendMessage(ChatColor.RED + "Een TOTEM heeft je leven gered!");
-					p.addPotionEffect(new PotionEffect(PotionEffectType.HEALTH_BOOST, 180, 1));
-					p.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 180, 1));
-					p.setHealth(p.getMaxHealth());
-					return;
-				}
-				e.setCancelled(true);
-				p.playEffect(EntityEffect.TOTEM_RESURRECT);
-				p.setHealth(p.getMaxHealth());
-				p.getWorld().playEffect(p.getLocation(), Effect.DRAGON_BREATH, 10);
-			}
-		}
 	}
 	
 //	@EventHandler
