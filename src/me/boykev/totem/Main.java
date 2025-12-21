@@ -37,7 +37,7 @@ public class Main extends JavaPlugin implements Listener{
 				p.getWorld().playEffect(p.getLocation(), Effect.DRAGON_BREATH, 10);
 				p.sendMessage(ChatColor.RED + "Een TOTEM heeft je leven gered!");
 				p.addPotionEffect(new PotionEffect(PotionEffectType.HEALTH_BOOST, 180, 1));
-				p.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 180, 1));
+				p.addPotionEffect(new PotionEffect(PotionEffectType.RESISTANCE, 180, 1));
 				p.setHealth(p.getMaxHealth());
 				p.getInventory().removeItem(m);
 				p.updateInventory();
